@@ -5,7 +5,8 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-project(rlImGui)
+
+project(rlimgui)
 
 include(GNUInstallDirs)
 
@@ -32,6 +33,10 @@ SET(CMAKE_INSTALL_DOCDIR share/doc CACHE PATH "Output directory for documentatio
 option(BUILD_SHARED_LIBS "Build using shared libraries" OFF)
 
 add_library(${PROJECT_NAME} ${SOURCE_FILES})
+
+if (${BUILD_SHARED_LIBS})
+    target_compile_definitions(${PROJECT_NAME} PUBLIC RLIMGUI_SHARED_LIB)
+endif()
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
 	raylib

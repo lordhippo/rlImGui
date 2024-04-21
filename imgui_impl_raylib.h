@@ -41,14 +41,16 @@
 // - Introduction, links and more at the top of imgui.cpp
 
 #pragma once
+#include "export.h"
+
 #include "imgui.h"      // IMGUI_IMPL_API
 #ifndef IMGUI_DISABLE
 
-IMGUI_IMPL_API bool ImGui_ImplRaylib_Init(void);
-IMGUI_IMPL_API void Imgui_ImplRaylib_BuildFontAtlas(void);
-IMGUI_IMPL_API void ImGui_ImplRaylib_Shutdown(void);
-IMGUI_IMPL_API void ImGui_ImplRaylib_NewFrame(void);
-IMGUI_IMPL_API void ImGui_ImplRaylib_RenderDrawData(ImDrawData* draw_data);
-IMGUI_IMPL_API bool ImGui_ImplRaylib_ProcessEvents(void);
+RLIMGUI_EXPORT bool ImGui_ImplRaylib_Init(void);
+RLIMGUI_EXPORT void Imgui_ImplRaylib_BuildFontAtlas(void);
+RLIMGUI_EXPORT void ImGui_ImplRaylib_Shutdown(void);
+RLIMGUI_EXPORT void ImGui_ImplRaylib_NewFrame(void);
+RLIMGUI_EXPORT void ImGui_ImplRaylib_RenderDrawData(ImDrawData* draw_data);
+RLIMGUI_EXPORT bool ImGui_ImplRaylib_ProcessEvents(void);
 
 #endif // #ifndef IMGUI_DISABLE
