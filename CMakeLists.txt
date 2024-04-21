@@ -18,13 +18,17 @@ set (INSTALLABLE_HEADERS
 	"rlImGui.h"
 	"rlImGuiColors.h")
 
+set (INSTALLABLE_HEADERS_EXTRAS
+	"extras/FA6FreeSolidFontData.h"
+	"extras/IconsFontAwesome6.h")
+
 set(SOURCE_FILES
 	"rlImGui.cpp")
 
 set (INSTALLABLE_DOCFILES
-  README.md
-  LICENSE
-)
+  "README.md"
+  "LICENSE"
+  "extras/FontAwsome_LICENSE.txt")
 
 SET(CMAKE_INSTALL_LIBDIR lib CACHE PATH "Output directory for libraries")
 SET(CMAKE_INSTALL_BINDIR bin CACHE PATH "Output directory for binaries")
