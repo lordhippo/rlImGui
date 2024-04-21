@@ -8,7 +8,7 @@
 // - Introduction, links and more at the top of imgui.cpp
 
 #include "imgui.h"
-#include "imgui_impl_raylib.h"
+#include "../imgui_impl_raylib.h"
 #include "raylib.h"
 
 // Main code

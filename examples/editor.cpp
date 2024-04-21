@@ -14,8 +14,8 @@
 #include "raymath.h"
 
 #include "imgui.h"
-#include "rlImGui.h"
-#include "rlImGuiColors.h"
+#include "../rlImGui.h"
+#include "../rlImGuiColors.h"
 
 bool Quit = false;
 

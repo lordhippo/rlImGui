@@ -1,0 +1,9 @@
+{
+	"name": "rlimgui",
+	"version-string": "1.0.0",
+	"description": "A Raylib integration with DearImGui",
+	"dependencies": [
+		"imgui",
+		"raylib"
+	]
+}
