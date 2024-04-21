@@ -14,6 +14,7 @@ find_package(raylib CONFIG REQUIRED)
 find_package(imgui CONFIG REQUIRED)
 
 set (INSTALLABLE_HEADERS
+	"export.h"
 	"rlImGui.h"
 	"rlImGuiColors.h")
 
