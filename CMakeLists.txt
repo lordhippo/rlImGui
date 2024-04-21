@@ -14,16 +14,13 @@ find_package(imgui CONFIG REQUIRED)
 
 set (INSTALLABLE_HEADERS
 	"rlImGui.h"
-	"rlImGuiColors.h"
-	"extras/FA6FreeSolidFontData.h"
-	"extras/IconsFontAwesome6.h"
-)
+	"rlImGuiColors.h")
 
 set(SOURCE_FILES
 	"rlImGui.cpp")
 
 set (INSTALLABLE_DOCFILES
-  README
+  README.md
   LICENSE
 )
 
