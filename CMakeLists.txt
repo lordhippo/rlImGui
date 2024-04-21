@@ -29,6 +29,8 @@ SET(CMAKE_INSTALL_BINDIR bin CACHE PATH "Output directory for binaries")
 SET(CMAKE_INSTALL_INCLUDEDIR include CACHE PATH "Output directory for header files")
 SET(CMAKE_INSTALL_DOCDIR share/doc CACHE PATH "Output directory for documentation and license files")
 
+option(BUILD_SHARED_LIBS "Build using shared libraries" OFF)
+
 add_library(${PROJECT_NAME} ${SOURCE_FILES})
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
